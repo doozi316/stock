@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:paddingLeft="10dp"
+
+    android:paddingRight="10dp"
+
+    android:paddingTop="5dp"
+
+    android:paddingBottom="5dp"
+
+    android:background="#ffffff"
+
+    >
+
+<!--    // 물품명-->
+
+    <TextView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/content"
+
+        android:text="CONTENT"
+
+        android:textSize="20dp"
+
+        android:textColor="#00a7f5"
+
+        />
+
+<!--    //제조사-->
+
+    <TextView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/conManu"
+
+        android:text="MANUFACTURER"
+
+        android:textSize="20dp"
+
+        android:textColor="#f92a3f"
+
+        />
+
+<!--
+    //날짜
+-->
+
+    <TextView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/date"
+
+        android:text="DATE"
+
+        android:textSize="16dp"
+
+        android:textColor="#a902f0"
+
+        />
+
+<!--
+   <!- //담당자(USERNAME)
+&ndash;&gt;
+
+    <TextView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/userName"
+
+        android:text="USERNAME"
+
+        android:textSize="18dp"
+
+        android:textColor="#00a7f5"
+
+        />
+
+
+-->
+
+
+</LinearLayout>
