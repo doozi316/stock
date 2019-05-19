@@ -20,6 +20,8 @@ public class ContentListAdapter extends BaseAdapter{
         this.context=context;
         this.contentList=contentList;
     }
+
+
     //출력할 총갯수를 설정하는 메소드
     @Override
     public int getCount() {
@@ -43,11 +45,13 @@ public class ContentListAdapter extends BaseAdapter{
         View v = View.inflate(context, R.layout.table_content, null);
 
         //뷰에 다음 컴포넌트들을 연결시켜줌
+        TextView num = (TextView)v.findViewById(R.id.num);
         TextView content = (TextView)v.findViewById(R.id.content);
         TextView date = (TextView)v.findViewById(R.id.date);
         TextView conManu = (TextView)v.findViewById(R.id.conManu);
 
         content.setText(contentList.get(i).getContent());
+        num.setText(contentList.get(i).getNum());
         conManu.setText(contentList.get(i).getConManu());
         date.setText(contentList.get(i).getDate());
 

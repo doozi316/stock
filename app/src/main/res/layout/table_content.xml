@@ -38,6 +38,24 @@
 
         />
 
+    <!--    // 물품명-->
+
+    <TextView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:id="@+id/num"
+
+        android:text="NUM"
+
+        android:textSize="20dp"
+
+        android:textColor="#000000"
+
+        />
+
 <!--    //제조사-->
 
     <TextView
@@ -50,7 +68,7 @@
 
         android:text="MANUFACTURER"
 
-        android:textSize="20dp"
+        android:textSize="18dp"
 
         android:textColor="#f92a3f"
 

@@ -3,9 +3,18 @@ package com.example.ijangmin.stock;
 
 
 public class Content {
+    String num;
     String content;
     String date;
     String conManu;
+
+    public String getNum(){
+        return num;
+    }
+
+    public void setNum(String num){
+        this.num= num;
+    }
 
     public String getContent(){
         return content;
@@ -31,8 +40,9 @@ public class Content {
         this.conManu=conManu;
     }
 
-    public Content(String content, String conManu, String date){
+    public Content(String content,String num, String conManu, String date){
         this.content=content;
+        this.num = num;
         this.conManu=conManu;
         this.date=date;
     }
