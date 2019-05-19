@@ -3,8 +3,9 @@ package com.example.ijangmin.stock;
 
 
 public class Content {
-    String num;
+
     String content;
+    String num;
     String date;
     String conManu;
 

@@ -78,7 +78,9 @@ public class ManagementActivity extends AppCompatActivity {
 
                 //값들을 User클래스에 묶어줍니다
                 Content content1 = new Content(content,num,conManu,date);
+
                 contentList.add(content1);//리스트뷰에 값을 추가해줍니다
+                saveList.add(content1);//회원 검색 기능 용
                 count++;
             }
 

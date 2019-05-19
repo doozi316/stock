@@ -48,7 +48,7 @@ public class ContentListAdapter extends BaseAdapter{
     //아이템별 아이디를 반환하는 메소드
     @Override
     public long getItemId(int i) {
-        return 0;
+        return i;
     }
 
     //가장 중요한 부분
