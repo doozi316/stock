@@ -33,7 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText emailText = (EditText)findViewById(R.id.emailText);
         final EditText phoneText = (EditText)findViewById(R.id.phoneText);
 
-        Button regbtn = (Button)findViewById(R.id.registerbtn);
+        Button regbtn = (Button)findViewById(R.id.register);
 
         regbtn.setOnClickListener(new View.OnClickListener() {
 

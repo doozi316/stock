@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
@@ -10,40 +10,14 @@
 
     android:layout_height="match_parent"
 
-    tools:context="com.example.ijangmin.stock.ManagementActivity"
-
-    android:orientation="vertical"
+    tools:context="com.example.ijangmin.stock.ManagementActivity">
 
 
-    >
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-
-            android:id="@+id/search"
-
-            android:layout_width="match_parent"
-
-            android:layout_weight="1"
-
-            android:layout_height="wrap_content"
-
-            android:hint="search"
-
-            />
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="495dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -53,6 +27,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
+        <EditText
+
+            android:id="@+id/search"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:hint="search"
+
+            />
 
 
         <ListView
@@ -64,12 +49,14 @@
 
             android:layout_height="match_parent"
 
+            android:layout_marginLeft="15dp"
 
+            android:layout_marginRight="15dp"
 
             android:layout_marginTop="10dp"
 
 
-            android:dividerHeight="1dp">
+            android:dividerHeight="10dp">
 
 
         </ListView>
@@ -78,5 +65,5 @@
     </LinearLayout>
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
 
