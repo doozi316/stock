@@ -4,47 +4,48 @@ package com.example.ijangmin.stock;
 
 public class Content {
 
-    String content;
-    String num;
-    String date;
-    String conManu;
+    String productName;
+    String productNum;
+    String productDate;
+    String productManu;
 
     public String getNum(){
-        return num;
+        return productNum;
     }
 
-    public void setNum(String num){
-        this.num= num;
+    public void setNum(String productNum){
+        this.productNum= productNum;
     }
 
     public String getContent(){
-        return content;
+        return productName;
     }
 
-    public void setContent(String content){
-        this.content= content;
+    public void setContent(String productName){
+        this.productName= productName;
     }
 
     public String getDate(){
-        return date;
+        return productDate;
     }
 
-    public void setDate(String date){
-        this.date = date;
+    public void setDate(String productDate){
+        this.productDate = productDate;
     }
 
     public String getConManu(){
-        return conManu;
+        return productManu;
     }
 
     public void setConManu(){
-        this.conManu=conManu;
+        this.productManu=productManu;
     }
 
-    public Content(String content,String num, String conManu, String date){
-        this.content=content;
-        this.num = num;
-        this.conManu=conManu;
-        this.date=date;
+    public Content(String productName,String productNum, String productManu, String productDate){
+        this.productName=productName;
+        this.productNum = productNum;
+        this.productManu=productManu;
+        this.productDate=productDate;
+
     }
 }

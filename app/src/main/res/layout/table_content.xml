@@ -59,7 +59,7 @@
 
         android:layout_height="wrap_content"
 
-        android:id="@+id/content"
+        android:id="@+id/productName"
 
         android:text="CONTENT"
 
@@ -77,7 +77,7 @@
 
         android:layout_height="wrap_content"
 
-        android:id="@+id/num"
+        android:id="@+id/productNum"
 
         android:text="NUM"
 
@@ -95,7 +95,7 @@
 
         android:layout_height="wrap_content"
 
-        android:id="@+id/conManu"
+        android:id="@+id/productManu"
 
         android:text="MANUFACTURER"
 
@@ -115,7 +115,7 @@
 
         android:layout_height="wrap_content"
 
-        android:id="@+id/date"
+        android:id="@+id/productDate"
 
         android:text="DATE"
 

@@ -17,10 +17,10 @@ public class DeleteRequest extends StringRequest {
     //다음과 같이 10.0.2.2:포트번호 로 접근해야합니다 저는 8080 포트를 써서 다음과 같이 했습니다
     final static private String URL = "http://10.0.2.2:8080/Delete.php";
     private Map<String, String> parameters;
-    public DeleteRequest(String num, Response.Listener<String> listener){
+    public DeleteRequest(String productNum, Response.Listener<String> listener){
         super(Request.Method.POST, URL, listener, null);//Post방식임
         parameters = new HashMap<>();//해쉬맵 생성후 parameters 변수에 값을 넣어줌
-        parameters.put("num", num);
+        parameters.put("productNum", productNum);
     }
     @Override
     protected Map<String, String> getParams() throws AuthFailureError {

@@ -63,21 +63,21 @@ public class ManagementActivity extends AppCompatActivity {
             JSONArray jsonArray = jsonObject.getJSONArray("response");
             int count = 0;
 
-            String content, num, conManu, date;
+            String productName, productNum, productManu, productDate;
 
             //JSON 배열 길이만큼 반복문을 실행
             while(count < jsonArray.length()){
                 //count는 배열의 인덱스를 의미
                 JSONObject object = jsonArray.getJSONObject(count);
 
-                content = object.getString("content");
-                num = object.getString("num");
-                conManu = object.getString("conManu");
-                date = object.getString("date");
+                productName = object.getString("productName");
+                productNum = object.getString("productNum");
+                productManu = object.getString("productManu");
+                productDate = object.getString("productDate");
 
 
                 //값들을 User클래스에 묶어줍니다
-                Content content1 = new Content(content,num,conManu,date);
+                Content content1 = new Content(productName,productNum,productManu,productDate);
 
                 contentList.add(content1);//리스트뷰에 값을 추가해줍니다
                 saveList.add(content1);//회원 검색 기능 용

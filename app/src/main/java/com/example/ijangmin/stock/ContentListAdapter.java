@@ -61,15 +61,15 @@ public class ContentListAdapter extends BaseAdapter{
         //뷰에 다음 컴포넌트들을 연결시켜줌
         //final추가 안붙이면 에러남 리스너로 전달하고 싶은 지역변수는 final로 처리해야됨
 
-        final TextView num = (TextView)v.findViewById(R.id.num);
-        TextView content = (TextView)v.findViewById(R.id.content);
-        TextView date = (TextView)v.findViewById(R.id.date);
-        TextView conManu = (TextView)v.findViewById(R.id.conManu);
+        final TextView productNum = (TextView)v.findViewById(R.id.productNum);
+        TextView productName = (TextView)v.findViewById(R.id.productName);
+        TextView productDate = (TextView)v.findViewById(R.id.productDate);
+        TextView productManu = (TextView)v.findViewById(R.id.productManu);
 
-        content.setText(contentList.get(i).getContent());
-        num.setText(contentList.get(i).getNum());
-        conManu.setText(contentList.get(i).getConManu());
-        date.setText(contentList.get(i).getDate());
+        productName.setText(contentList.get(i).getContent());
+        productNum.setText(contentList.get(i).getNum());
+        productManu.setText(contentList.get(i).getConManu());
+        productDate.setText(contentList.get(i).getDate());
 
 
         //이렇게하면 findViewWithTag를 쓸 수 있음 없어도 되는 문장임
@@ -109,7 +109,7 @@ public class ContentListAdapter extends BaseAdapter{
 
                                 for(int i = 0; i < saveList.size(); i++){
 
-                                    if(saveList.get(i).getNum().equals(num.getText().toString())){
+                                    if(saveList.get(i).getNum().equals(productNum.getText().toString())){
 
                                         saveList.remove(i);
 
@@ -141,7 +141,7 @@ public class ContentListAdapter extends BaseAdapter{
 
                 //위에서 userID를 final로 선언해서 아래 처럼 가능함
 
-                DeleteRequest deleteRequest = new DeleteRequest(num.getText().toString(), responseListener);
+                DeleteRequest deleteRequest = new DeleteRequest(productNum.getText().toString(), responseListener);
 
                 //2. RequestQueue를 생성한다.
 
