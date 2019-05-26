@@ -32,6 +32,7 @@
         <activity android:name=".CustomScannerActivity"></activity>
         <activity android:name=".ScanActivity"></activity>
         <activity android:name=".ManagementActivity"></activity>
+        <activity android:name=".AddActivity"></activity>
     </application>
 
 </manifest>

@@ -35,7 +35,12 @@ public class ScanActivity extends AppCompatActivity {
             String re = scanResult.getContents();
             String message = re;
             Log.d("onActivityResult", "onActivityResult: ." + re);
-            Toast.makeText(this, re, Toast.LENGTH_LONG).show();
+            /*Toast.makeText(this, re, Toast.LENGTH_LONG).show();*/
+
+            Intent intent2 = new Intent(ScanActivity.this, AddActivity.class);
+            intent2.putExtra("re",re);
+            startActivity(intent2);
+
         }
     }
 
