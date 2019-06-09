@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class AddRequest extends StringRequest{
 
-    final static private String URL = "http://192.168.35.233:8080/Add.php";
+    final static private String URL = "http://10.0.2.2:8080/Add.php";
     private Map<String, String> parameters;
 
     //생성자

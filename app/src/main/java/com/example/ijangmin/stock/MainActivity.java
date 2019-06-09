@@ -2,6 +2,7 @@ package com.example.ijangmin.stock;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         EditText passwordText = (EditText)findViewById(R.id.passwordText);
         Button scanBtn = (Button) findViewById(R.id.scanBtn);
         Button tableBtn = (Button) findViewById(R.id.tableBtn);
-
+        Button commuBtn =(Button) findViewById(R.id.commuBtn);
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        commuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (Intent.ACTION_VIEW, Uri.parse("http://172.30.1.21:8080/"));
+                startActivity(intent);
+            }
+        });
 
     }
 
