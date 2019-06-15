@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         commuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent (Intent.ACTION_VIEW, Uri.parse("http://172.30.1.21:8080/"));
+                Intent intent = new Intent (Intent.ACTION_VIEW, Uri.parse("http://172.20.10.4:8080/"));
                 startActivity(intent);
             }
         });
