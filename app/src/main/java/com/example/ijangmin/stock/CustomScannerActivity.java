@@ -1,10 +1,13 @@
 package com.example.ijangmin.stock;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.journeyapps.barcodescanner.CaptureManager;
 import com.journeyapps.barcodescanner.DecoratedBarcodeView;
@@ -12,6 +15,7 @@ public class CustomScannerActivity extends Activity implements DecoratedBarcodeV
 
     private CaptureManager capture;
     private DecoratedBarcodeView barcodeScannerView;
+
     private ImageButton setting_btn,switchFlashlightButton;
     private Boolean switchFlashlightButtonCheck;
 
@@ -86,4 +90,11 @@ public class CustomScannerActivity extends Activity implements DecoratedBarcodeV
         switchFlashlightButton.setImageResource(R.drawable.ic_flash_off_white_36dp);
         switchFlashlightButtonCheck = true;
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             //List.php은 파싱으로 가져올 웹페이지
-            target = "http://10.0.2.2:8080/table.php";
+            target = "http://stock123.dothome.co.kr/table.php";
         }
 
         @Override

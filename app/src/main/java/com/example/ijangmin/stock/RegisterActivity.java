@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -33,7 +34,11 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText emailText = (EditText)findViewById(R.id.emailText);
         final EditText phoneText = (EditText)findViewById(R.id.phoneText);
 
-        Button regbtn = (Button)findViewById(R.id.registerbtn);
+
+        final TextView regbtn = (TextView)findViewById(R.id.register);
+
+
+
 
         regbtn.setOnClickListener(new View.OnClickListener() {
 
