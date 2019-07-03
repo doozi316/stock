@@ -33,7 +33,7 @@ web 커뮤니티 기능도 포함되어 있습니다.
 
 ## 실행 영상
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ajQqjeMKHM8"  frameborder="0" gesture="media" allowfullscreen=""></iframe>
+[![Video Label](http://img.youtube.com/vi/ajQqjeMKHM8/0.jpg)](https://youtu.be/ajQqjeMKHM8)
 
 
 <br/>
