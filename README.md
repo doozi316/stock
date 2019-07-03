@@ -26,7 +26,7 @@ web 커뮤니티 기능도 포함되어 있습니다.
 
 ## 설계도
 
-![](https://stock/IMAGES/1.png)
+![](./IMAGES/1.png)
 
 <br/>
 <br/>
