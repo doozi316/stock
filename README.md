@@ -3,36 +3,44 @@
 <br/>
 </br>
 
-## 프로젝트 개요
+## 프로젝트 소개
 
-바코드 스캐너(zxing)를 활용한 재고관리 App 입니다.
-web 커뮤니티 기능도 포함되어 있습니다.
-
-<br/>
-</br>
-
-## 핵심 언어/도구
-
-- PHP
-- JSP
-- Android Studio
-- HTML/CSS
-- MySQL
-- dothome free hosting
-- eclipse
+졸업작품으로 진행한 안드로이드 프로젝트입니다. <br/> 
+바코드 스캔 기능을 활용해 제품 일련번호 및 제품 정보를 DB에 저장하고 삭제할 수 있는 어플입니다.
 
 <br/>
 </br>
 
-## 설계도
-
-![](./IMAGES/1.png)
+## 개발 인원
+3명 (김현진, 이**, 손**)
 
 <br/>
+<br/>
 
-안드로이드와 mySQL을 PHP를 활용하여 연결 시켰습니다.
-안드로이드 쪽 서버는 dothome 무료 호스팅을 이용하였으나 web 커뮤니티 쪽은 로컬 호스트를 사용하였습니다.
-test 폴더 내에 web 커뮤니티 소스가 있습니다.
+
+## 개발 기간
+2019.09 ~ 2019.05 (약 9개월 - 졸업작품)<br/><br/>
+
+## 핵심 기능
+
+- 로그인, 회원가입 기능<br/>
+- 휴대폰 카메라를 이용한 바코드 스캔 기능<br/>
+- 스캔 정보 및 제품 정보 DB 저장/삭제/검색<br/>
+- 웹 커뮤니티(회원 일정등록, 로그인, 공지사항, 쪽지기능)
+
+<br/>
+</br>
+
+## 개발 환경
+
+<strong>Operating System</strong> : Windows 10<br/>
+<strong>Programming Language</strong> : ASP, JAVA (JDK 1.8.0), PHP 5.6.0<Br/>
+<strong>DBMS</strong> : Mysql (Server version: 5.6.20 MySQL Community Server (GPL)) <br/>
+<strong>Technology</strong> : JSON, HTML 5.0, CSS3<Br/>
+<strong>application Server</strong> : 닷홈 웹 호스팅<br/>
+<strong>Tool</strong> : Android Studio, Autoset9<br/>
+<strong>library</strong> : ZXing library, Volley library<Br/>
+
 
 <br/>
 <br/>
@@ -51,22 +59,3 @@ test 폴더 내에 web 커뮤니티 소스가 있습니다.
 [![Video Label](http://img.youtube.com/vi/dq3hIe8i0Q8/0.jpg)](https://youtu.be/dq3hIe8i0Q8)
 
 
-<br/>
-<br/>
-
-
-## 보완해야할 점
-
-- 회원가입 페이지의 로그인으로 돌아가는 text에 action을 추가하지 않았습니다.
-- web 커뮤니티의 회원 DB와 쪽지 및 공지사항 기능이 연동되지 않아 action이 모두 개별적으로 이루어집니다. 
-
-<br/>
-<br/>
-
-## 참조 오픈 소스
-
-- 회원가입, 로그인 및 리스트 출력
-<https://github.com/GaKaRi/gakari_android/tree/master/Proj_Manager_v5>
-
-- zxing 바코드 커스텀
-<https://github.com/dolsanta/CustomZxingTest>
